@@ -1,0 +1,11 @@
+{
+    "runOnSave.commands": [
+        {
+            "match": ".*\\.brs$",
+            "command": " cd ADD_PATH_TO_FILES_TO_ZIP_HERE && zip -r -X '../ADD_ZIP_FILENAME_YOU_WANT_HERE.zip' * && curl --user ADD_YOUR_ROKU_USERNAME_HERE_DEFAULT_IS_rokudev:ADD_YOUR_ROKU_DEV_PASSWORD_HERE --digest --verbose --max-time 5 --user-agent 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)' --form archive=@../ADD_ZIP_FILENAME_YOU_WANT_HERE.zip --form 'mysubmit=Replace' 'http://ADD_YOUR_ROKU_IP_HERE/plugin_install' > /dev/null",
+            "runIn": "terminal",
+            "runningStatusMessage": "Started",
+            "finishStatusMessage": "Finished"
+        }
+    ]
+}
