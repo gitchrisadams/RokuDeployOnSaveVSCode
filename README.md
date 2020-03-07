@@ -20,7 +20,14 @@ https://marketplace.visualstudio.com/items?itemName=pucelle.run-on-save
 code pucelle.run-on-save-1.1.4.vsix
 ```
 
-## Copy over .vscode folder
+## Do not just copy over .vscode folder
+
+It is better to let VS code create a settings.json for the works space.
+Open code > preferences > settings
+Click "Workspace" tab
+Click top right button to open settings.json or search for settings.json
+
+## Copy over settings.json
 
 Change the settings.json to include your information
 such as IP, paths, and passwords
